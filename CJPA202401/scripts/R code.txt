@@ -1,0 +1,68 @@
+## Hidden hotspots of amphibian biodiversity in China, Xu et al., doi: xxxxxx.
+## R code and all related files were freely accessed in github platform (https://github.com/XuWeiEvo/Chinese-amphibians-diversity)
+
+## transforming occurrences to grid cells map
+library(letsR)
+data <- read.csv("occurrences.csv") ## contains raw data of geographic coordinates, and is available from the corresponding author upon reasonable request, with the only purpose of science to protect endangered species.
+xy <- data[, c("lon", "lat")]
+sp_name <- data$Species
+PAM_points <- lets.presab.points(xy, sp_name, xmn = -180, xmx = 180,ymn = -90, ymx = 90, res = 1)
+write.csv(PAM_points$Presence_and_Absence_Matrix,"matrix.csv") ## saved in github platform
+
+## The matrix.csv file was subsequently imported into ArcGIS to exclude grid cells with <50% land area following Kreft and Jetz (41) and He et al. (42),
+## resulting in the creation of the matrix_China.csv file and saved in github platform.
+
+## estimating beta simpson value and use UPGMA to cluster grid cells
+library(ape)
+library(vegan)
+matrix <- read.csv("matrix China.csv",row.names=1)
+beta_sim<-betadiver(matrix,"sim")
+beta_sim_tree <- hclust(beta_sim,"ave")
+
+library(GMD)
+css.obj <- css.hclust(beta_sim,beta_sim_tree)
+elbow.obj <- elbow.batch(css.obj)
+k <- elbow.obj$k
+cutree.obj <- cutree(beta_sim_tree,k=k) ## the clustered grid cells were saved in cutree.obj
+
+## estimating endemism
+library(phyloregion)
+matrix1<-as.matrix(matrix)
+matrix2<-Matrix(matrix1)
+endemism<-weighted_endemism(matrix2)
+
+## The file matrix_China.csv was manually edited to remove species that are not included in the tree, resulting in the creation of a new file called matrix_PDPE.csv.
+
+## estimating phylogenetic diversity and phylogenetic endemism
+library(phyloregion)
+tree <- read.tree("Chinese amphibians phylogeny reduced for PD and PE.tre") ## remove those species not in the matrix compared with intree.dated.tre
+com <- read.csv("matrix China  reduced for PD and PE.csv",row.names=1)
+com1 <- Matrix(as.matrix(com))
+pd <-PD(com1,tree)
+pe <- phylo_endemism(com1, tree)
+
+## performing spatial regression model
+library(spdep)
+library(sp)
+library(spatialreg)
+
+input <- read.csv("species richness of described and cryptic.csv")  ## manually edited from matrix_China.csv, containing ln-transformed richness of described species and cryptic species of each grid cell
+lat <-input$lat
+long <-input$lon
+test <- input[,c(1,2)]
+sptest <- SpatialPoints(test, proj4string = CRS("+proj=longlat +datum=WGS84"))
+nbk1 <- knn2nb(knearneigh(sptest, k =1, longlat =TRUE))
+snbk1 <- make.sym.nb(nbk1)
+lw<-nb2listw(snbk1, style="W")
+
+## Ordinary Least Squares linears regression
+f1 <- lndescribed ~ lnundescribed
+m1 <- lm (f1,input=input)
+input$residuals <- residuals(m1)
+moran.mc(input$residuals, lw, 999)
+
+## spatial autoregressive lag model
+m1s = lagsarlm(f1, input=input, lw, tol.solve=1.0e-30)
+summary(m1s)
+input$residuals <- residuals(m1s)
+moran.mc(input$residuals, lw, 999)
