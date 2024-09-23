@@ -1,0 +1,91 @@
+f'''\
+fn <- ""
+treefile <- fn+"{treefile}"
+classe_state_datafile <- fn+"{classe_state_datafile}"
+outfilebase <- fn+"{outfilebase}"
+
+observed_phylogeny <- readTrees(treefile)[1]
+root_age <- observed_phylogeny.rootAge()
+
+chardata <- readCharacterDataDelimited(classe_state_datafile, stateLabels={nstates+1}, type="NaturalNumbers", delimiter=",", headers=FALSE)
+ntaxa = chardata.ntaxa()
+
+mvi <- 0
+mni <- 0
+total_diversity <- {total_diversity}
+netdiv_mean <- ln(ln(total_diversity/2.0))/root_age
+netdiv_sd <- 1.0
+expected_num_events <- 1
+rate_pr := observed_phylogeny.treeLength() / expected_num_events
+extinction ~ dnLognormal(netdiv_mean, netdiv_sd)
+moves[++mvi] = mvSlide(extinction, weight=1)
+speciation_sym ~ dnExp(rate_pr)
+moves[++mvi] = mvSlide(speciation_sym, weight=1)
+speciation_sub ~ dnExp(rate_pr)
+moves[++mvi] = mvSlide(speciation_sub, weight=1)
+speciation_allo ~ dnExp(rate_pr)
+moves[++mvi] = mvSlide(speciation_allo, weight=1)
+dispersal ~ dnExp(rate_pr)
+moves[++mvi] = mvSlide(dispersal, weight=1)
+# extinction rates
+{extinction_rate_lines}
+
+for (i in 1:{nstates}) {{
+  for (j in 1:{nstates}) {{
+    anarates[i][j] <- 0.0
+  }}
+}}
+
+# populate non-zero anagenetic rates
+{anagenetic_rates_lines}
+
+anagenetic_ratematrix := fnFreeK(anarates, rescaled=false)
+
+# cladogenetic events
+{clado_events_lines}
+
+clado_matrix := fnCladogeneticSpeciationRateMatrix(
+    clado_events, speciation_rates, {nstates})
+
+root_frequencies <- simplex({root_simplex_params})
+
+total_diversity <- {total_diversity}
+rho <- observed_phylogeny.ntips()/total_diversity
+classe ~ dnCDBDP(rootAge = root_age, cladoEventMap = clado_matrix, extinctionRates = extinction_rates, Q = anagenetic_ratematrix, delta = 1.0, pi = root_frequencies, rho = rho, condition = "time")
+# clamp the model with the observed data
+classe.clamp(observed_phylogeny)
+classe.clampCharData(chardata)
+
+#############
+# The Model #
+#############
+
+# workspace model wrapper
+mymodel = model(classe)
+
+# set up the monitors that will output parameter values to file and screen
+monitors[++mni] = mnModel(filename=outfilebase+".parameters.log", printgen=1)
+monitors[++mni] = mnScreen(printgen=1, speciation_rates, extinction_rates,dispersal)
+monitors[++mni] = mnStochasticCharacterMap(cdbdp=classe, filename=outfilebase+".smap.log", printgen=1)
+
+
+################
+# The Analysis #
+################
+
+# workspace mcmc
+mymcmc = mcmc(mymodel, monitors, moves)
+
+# pre-burnin to tune the proposals
+mymcmc.burnin(generations={ngen_burnin}, tuningInterval=5)
+
+# run the MCMC
+mymcmc.run(generations={ngen_mcmc})
+
+################################
+# Stochastic character mapping #
+################################
+anc_state_trace = readAncestralStateTrace(outfilebase+".smap.log")
+characterMapTree(observed_phylogeny, anc_state_trace, character_file=outfilebase+".smap.tree", posterior_file=outfilebase+".posterior.tree", burnin=0.25, reconstruction="marginal")
+q()
+'''
