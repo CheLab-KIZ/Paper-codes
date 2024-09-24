@@ -1,0 +1,43 @@
+#NEXUS
+Begin trees;
+   Translate
+1 Rattus_andamanensis,
+2 Rattus_baluensis,
+3 Rattus_tiomanicus,
+4 Rattus_mindorensis,
+5 Rattus_rattus,
+6 Rattus_sakeratensis,
+7 Rattus_tanezumi,
+8 Rattus_hoogerwerfi,
+9 Rattus_korinchi,
+10 Rattus_losea,
+11 Rattus_argentiventer,
+12 Rattus_hoffmanni,
+13 Rattus_exulans,
+14 Rattus_everetti,
+15 Rattus_satarae,
+16 Rattus_montanus,
+17 Rattus_fuscipes,
+18 Rattus_sordidus,
+19 Rattus_villosissimus,
+20 Rattus_colletti,
+21 Rattus_tunneyi,
+22 Rattus_giluwensis,
+23 Rattus_detentus,
+24 Rattus_praetor,
+25 Rattus_novaeguineae,
+26 Rattus_steini,
+27 Rattus_verecundus,
+28 Rattus_niobe,
+29 Rattus_mordax,
+30 Rattus_morotaiensis,
+31 Rattus_leucopus,
+32 Rattus_facetus,
+33 Rattus_xanthurus,
+34 Rattus_timorensis,
+35 Rattus_nitidus,
+36 Rattus_pyctoris,
+37 Rattus_norvegicus
+		;
+tree con_tree = (((((((1:2.479588,(((((((2:0.546398,3:0.546398):0.078604,4:0.625002):0.642738,(5:0.727008,6:0.727008):0.540731):0.333561,7:1.601300):0.414764,8:2.016064):0.128864,9:2.144928):0.071296,10:2.216224):0.263364):0.087832,(11:1.682048,12:1.682048):0.885373):0.731577,13:3.298998):0.458468,14:3.757466):0.153982,(15:2.924196,16:2.924196):0.987251):0.347482,((((((17:2.290661,((18:1.079839,(19:0.752685,20:0.752685):0.327155):0.694613,21:1.774452):0.516209):0.058186,(((22:1.263422,23:1.263422):0.126617,(((24:0.356621,25:0.356621):0.138469,26:0.495090):0.747538,27:1.242628):0.147411):0.646142,(28:1.576394,29:1.576394):0.459787):0.312666):0.154485,30:2.503333):0.066172,31:2.569505):0.739908,(32:1.163650,33:1.163650):2.145763):0.449081,34:3.758494):0.500436):0.466947,((35:0.581117,36:0.581117):1.338456,37:1.919573):2.806303):6.894123;
+End;
