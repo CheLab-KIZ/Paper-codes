@@ -1,0 +1,40 @@
+#NEXUS
+Begin trees;
+   Translate
+1 Ochotona_pusilla,
+2 Ochotona_cansus,
+3 Ochotona_curzoniae,
+4 Ochotona_nubrica,
+5 Ochotona_sikimaria,
+6 Ochotona_qionglaiensis,
+7 Ochotona_thomasi,
+8 Ochotona_thibetana,
+9 Ochotona_dauurica,
+10 Ochotona_erythrotis,
+11 Ochotona_koslowi,
+12 Ochotona_forresti,
+13 Ochotona_macrotis,
+14 Ochotona_iliensis,
+15 Ochotona_rutila,
+16 Ochotona_ladacensis,
+17 Ochotona_roylii,
+18 Ochotona_rufescens,
+19 Ochotona_vizier,
+20 Ochotona_flatcalvariam,
+21 Ochotona_sacraria,
+22 Ochotona_syrinx,
+23 Ochotona_huanglongensis,
+24 Ochotona_collaris,
+25 Ochotona_princeps,
+26 Ochotona_argentata,
+27 Ochotona_opaca,
+28 Ochotona_pallasii,
+29 Ochotona_coreana,
+30 Ochotona_hyperborea,
+31 Ochotona_mantchurica,
+32 Ochotona_alpina,
+33 Ochotona_hoffmanni,
+34 Ochotona_turuchanensis
+		;
+tree con_tree = (1:20.744658,((((((((2:2.239617,3:2.239617):1.329202,(4:3.329582,(5:2.790747,6:2.790747):0.538835):0.239237):0.893990,7:4.462809):0.092162,8:4.554972):0.641822,9:5.196793):8.464943,(((10:0.292292,11:0.292292):7.709120,12:8.001412):1.809002,(((((13:5.716391,14:5.716391):1.356709,15:7.073100):0.288297,16:7.361396):0.351103,17:7.712499):0.830753,(18:4.090589,19:4.090589):4.452663):1.267162):3.851322):0.364481,(20:8.107992,((21:4.174786,22:4.174786):2.937539,23:7.112325):0.995667):5.918226):1.111970,((24:6.624023,25:6.624023):3.947221,((26:1.999620,(27:1.615295,28:1.615295):0.384324):6.237703,(((29:2.339183,30:2.339183):2.716192,31:5.055375):1.473987,(32:1.207783,(33:0.832704,34:0.832704):0.375079):5.321578):1.707961):2.333922):4.566943):5.606471):31.255342;
+End;
