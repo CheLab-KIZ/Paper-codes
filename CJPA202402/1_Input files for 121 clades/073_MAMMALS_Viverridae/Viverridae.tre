@@ -1,0 +1,37 @@
+#NEXUS
+Begin trees;
+   Translate
+1 Civettictis_civetta,
+2 Viverra_megaspila,
+3 Viverra_zibetha,
+4 Viverra_tangalunga,
+5 Viverricula_indica,
+6 Genetta_abyssinica,
+7 Genetta_angolensis,
+8 Genetta_bourloni,
+9 Genetta_poensis,
+10 Genetta_pardina,
+11 Genetta_maculata,
+12 Genetta_tigrina,
+13 Genetta_genetta,
+14 Genetta_cristata,
+15 Genetta_servalina,
+16 Genetta_felina,
+17 Genetta_piscivora,
+18 Genetta_johnstoni,
+19 Genetta_victoriae,
+20 Genetta_thierryi,
+21 Poiana_richardsonii,
+22 Chrotogale_owstoni,
+23 Hemigalus_derbyanus,
+24 Diplogale_hosei,
+25 Cynogale_bennettii,
+26 Macrogalidia_musschenbroekii,
+27 Arctictis_binturong,
+28 Paguma_larvata,
+29 Paradoxurus_hermaphroditus,
+30 Paradoxurus_jerdoni,
+31 Paradoxurus_zeylonensis
+		;
+tree con_tree = ((((1:13.850059,((2:4.089119,3:4.089119):1.695639,4:5.784758):8.065301):3.626574,5:17.476633):11.903150,((6:12.214819,((((((7:3.334854,(((8:0.825189,9:0.825189):0.732135,10:1.557324):1.117993,(11:1.421625,12:1.421625):1.253692):0.659537):3.881644,13:7.216498):2.256094,((14:2.789353,15:2.789353):6.420587,(16:9.182043,17:9.182043):0.027897):0.262652):0.277088,18:9.749680):0.660940,19:10.410620):1.141629,20:11.552250):0.662569):3.235250,21:15.450069):13.929714):4.910217,((((22:13.638024,23:13.638024):3.286381,24:16.924405):6.145744,(25:20.824965,26:20.824965):2.245184):5.537423,(27:18.081663,(28:12.813994,(29:8.902377,(30:2.989680,31:2.989680):5.912697):3.911617):5.267669):10.525909):5.682428):9.890000;
+End;
