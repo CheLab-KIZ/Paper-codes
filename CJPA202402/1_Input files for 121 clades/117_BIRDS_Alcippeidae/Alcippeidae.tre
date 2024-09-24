@@ -1,0 +1,16 @@
+#NEXUS
+Begin trees;
+   Translate
+1 Alcippe_poioicephala,
+2 Alcippe_grotei,
+3 Alcippe_pyrrhoptera,
+4 Alcippe_brunneicauda,
+5 Alcippe_nipalensis,
+6 Alcippe_davidi,
+7 Alcippe_peracensis,
+8 Alcippe_fratercula,
+9 Alcippe_hueti,
+10 Alcippe_morrisonia
+		;
+tree con_tree = (((1:2.984899,2:2.984899):2.670805,(3:3.409118,4:3.409118):2.246585):0.531685,(5:4.527967,(6:4.148526,((7:2.275061,8:2.275061):0.517681,(9:2.015001,10:2.015001):0.777741):1.355784):0.379441):1.659422):11.582611;
+End;

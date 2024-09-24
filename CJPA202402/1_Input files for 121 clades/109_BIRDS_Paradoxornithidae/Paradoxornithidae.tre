@@ -1,0 +1,39 @@
+#NEXUS
+Begin trees;
+   Translate
+1 Myzornis_pyrrhoura,
+2 Moupinia_poecilotis,
+3 Lioparus_chrysotis,
+4 Chrysomma_sinense,
+5 Fulvetta_cinereiceps,
+6 Fulvetta_formosana,
+7 Fulvetta_manipurensis,
+8 Fulvetta_vinipectus,
+9 Fulvetta_ludlowi,
+10 Fulvetta_striaticollis,
+11 Fulvetta_ruficapilla,
+12 Rhopophilus_pekinensis,
+13 Rhopophilus_albosuperciliaris,
+14 Chleuasicus_atrosuperciliaris,
+15 Sinosuthora_alphonsiana,
+16 Sinosuthora_webbiana,
+17 Sinosuthora_brunnea,
+18 Sinosuthora_conspicillata,
+19 Sinosuthora_zappeyi,
+20 Suthora_fulvifrons,
+21 Suthora_nipalensis,
+22 Suthora_verreauxi,
+23 Neosuthora_davidiana,
+24 Chamaea_fasciata,
+25 Calamornis_heudei,
+26 Conostoma_aemodium,
+27 Cholornis_paradoxus,
+28 Cholornis_unicolor,
+29 Psittiparus_gularis,
+30 Psittiparus_bakeri,
+31 Psittiparus_ruficeps,
+32 Paradoxornis_guttaticollis,
+33 Paradoxornis_flavirostris
+		;
+tree con_tree = (1:14.420546,(2:13.936532,(3:12.590973,((4:10.956044,((((((5:0.480577,6:0.480577):2.051822,7:2.532400):1.185343,(8:2.740672,9:2.740672):0.977070):0.260297,10:3.978039):2.137751,11:6.115790):4.233711,(12:0.369850,13:0.369850):9.979651):0.606543):0.881503,(((14:7.933929,(((15:0.532183,16:0.532183):2.453210,17:2.985392):3.146814,(18:0.949621,19:0.949621):5.182586):1.801722):2.021207,((20:5.797011,(21:2.877075,22:2.877075):2.919937):2.821550,23:8.618561):1.336576):1.156947,(24:10.462817,(25:9.809950,(((26:7.103831,(27:6.094760,28:6.094760):1.009071):0.387516,(29:5.240718,(30:0.330119,31:0.330119):4.910598):2.250630):1.899183,(32:3.185772,33:3.185772):6.204758):0.419420):0.652867):0.649267):0.725463):0.753426):1.345558):0.484014):8.659454;
+End;

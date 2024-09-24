@@ -1,0 +1,35 @@
+#NEXUS
+Begin trees;
+   Translate
+1 Cettia_brunnifrons,
+2 Cettia_castaneocoronata,
+3 Cettia_major,
+4 Cettia_cetti,
+5 Tesia_cyaniventer,
+6 Tesia_olivea,
+7 Tesia_everetti,
+8 Tesia_superciliaris,
+9 Hemitesia_neumanni,
+10 Hemitesia_pallidipes,
+11 Urosphena_squameiceps,
+12 Urosphena_whiteheadi,
+13 Horornis_acanthizoides,
+14 Horornis_brunnescens,
+15 Horornis_flavolivaceus,
+16 Horornis_fortipes,
+17 Horornis_annae,
+18 Horornis_carolinae,
+19 Horornis_haddeni,
+20 Horornis_ruficapilla,
+21 Horornis_parens,
+22 Horornis_canturians,
+23 Horornis_diphone,
+24 Horornis_seebohmi,
+25 Tickellia_hodgsoni,
+26 Phyllergates_cucullatus,
+27 Abroscopus_superciliaris,
+28 Abroscopus_albogularis,
+29 Abroscopus_schisticeps
+		;
+tree con_tree = (((((((1:5.709774,2:5.709774):1.976728,3:7.686502):0.208302,4:7.894805):0.350625,((5:4.826300,6:4.826300):0.249979,(7:3.691762,8:3.691762):1.384517):3.169151):0.931370,((9:5.520781,10:5.520781):2.116145,(11:5.244208,12:5.244208):2.392719):1.539873):0.924363,((((((13:1.825143,14:1.825143):3.321906,15:5.147048):0.613562,16:5.760611):1.019676,(((17:2.691973,(18:2.561341,((19:1.762057,20:1.762057):0.317413,21:2.079470):0.481870):0.130633):0.800327,22:3.492300):0.651319,(23:3.354844,24:3.354844):0.788776):2.636668):0.698333,25:7.478620):1.371943,26:8.850563):1.250600):0.452540,(27:8.332662,(28:6.685494,29:6.685494):1.647168):2.221041):7.506297;
+End;

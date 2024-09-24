@@ -1,0 +1,33 @@
+#NEXUS
+Begin trees;
+   Translate
+1 Sitta_arctica,
+2 Sitta_cashmirensis,
+3 Sitta_castanea,
+4 Sitta_neglecta,
+5 Sitta_cinnamoventris,
+6 Sitta_nagaensis,
+7 Sitta_europaea,
+8 Sitta_himalayensis,
+9 Sitta_victoriae,
+10 Sitta_neumayer,
+11 Sitta_tephronota,
+12 Sitta_formosa,
+13 Sitta_azurea,
+14 Sitta_frontalis,
+15 Sitta_oenochlamys,
+16 Sitta_canadensis,
+17 Sitta_villosa,
+18 Sitta_whiteheadi,
+19 Sitta_krueperi,
+20 Sitta_ledanti,
+21 Sitta_yunnanensis,
+22 Sitta_pusilla,
+23 Sitta_pygmaea,
+24 Sitta_carolinensis,
+25 Sitta_magna,
+26 Sitta_przewalskii,
+27 Sitta_leucopsis
+		;
+tree con_tree = ((((((1:14.500506,((2:9.734025,((((3:0.118771,4:0.118771):4.805701,5:4.924472):2.350665,6:7.275137):2.192591,7:9.467728):0.266297):3.420632,(8:3.467240,9:3.467240):9.687417):1.345849):1.009337,(10:4.689042,11:4.689042):10.820801):0.799665,12:16.309508):0.639853,((13:9.493831,(14:6.772523,15:6.772523):2.721308):6.010918,((((16:3.917183,(17:1.224865,18:1.224865):2.692318):2.849143,(19:2.124715,20:2.124715):4.641610):1.226816,21:7.993141):4.646553,(22:7.904733,23:7.904733):4.734962):2.865055):1.444612):1.940467,(24:13.478468,25:13.478468):5.411360):2.200172,(26:11.189932,27:11.189932):9.900068):17.800000;
+End;
