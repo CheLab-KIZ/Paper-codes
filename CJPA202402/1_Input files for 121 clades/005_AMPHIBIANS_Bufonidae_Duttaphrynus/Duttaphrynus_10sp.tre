@@ -1,0 +1,16 @@
+#NEXUS
+Begin trees;
+   Translate
+1 Duttaphrynus_crocus,
+2 Duttaphrynus_stuarti,
+3 Duttaphrynus_himalayanus,
+4 Duttaphrynus_brevirostris,
+5 Duttaphrynus_parietalis,
+6 Duttaphrynus_melanostictus,
+7 Duttaphrynus_scaber,
+8 Duttaphrynus_dhufarensis,
+9 Duttaphrynus_hololius,
+10 Duttaphrynus_stomaticus
+		;
+tree con_tree = (((1:17.47029227,2:17.47029311):1.481561511,(3:13.79918332,((4:10.43252637,(5:5.33473511,6:5.33473511):5.097792661):2.110555214,7:12.5430826435874):1.256101173):5.152672148):3.286840021,(8:12.32824638,(9:8.815041633,10:8.815040791):3.513204752):9.91044826);
+End;

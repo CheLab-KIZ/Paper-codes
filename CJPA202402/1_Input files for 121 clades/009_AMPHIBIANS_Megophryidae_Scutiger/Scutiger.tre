@@ -1,0 +1,26 @@
+#NEXUS
+Begin trees;
+   Translate
+1 Scutiger_boulengeri,
+2 Scutiger_mammatus,
+3 Scutiger_glandulatus,
+4 Scutiger_jiulongensis,
+5 Scutiger_liupanensis,
+6 Scutiger_pingwuensis,
+7 Scutiger_wanglangensis,
+8 Scutiger_muliensis,
+9 Scutiger_tuberculatus,
+10 Scutiger_chintingensis,
+11 Scutiger_ningshanensis,
+12 Scutiger_ghunsa,
+13 Scutiger_nepalensis,
+14 Scutiger_sikimmensis,
+15 Scutiger_occidentalis,
+16 Scutiger_tengchongensis,
+17 Scutiger_gongshanensis,
+18 Scutiger_nyingchiensis,
+19 Scutiger_spinosus,
+20 Scutiger_wuguanfui
+		;
+tree con_tree = ((((1:1.167820,2:1.167820):7.070958,((3:6.862020,(4:3.768474,(5:3.635168,(6:1.132671,7:1.132671):2.502497):0.133306):3.093546):0.343683,(8:3.224130,9:3.224130):3.981572):1.033076):6.354956,(((10:9.507863,11:9.507863):3.328017,((12:11.226409,13:11.226409):1.197043,14:12.423453):0.412427):0.446337,(15:13.023093,((16:8.198256,(17:7.049254,18:7.049254):1.149002):1.397310,19:9.595566):3.427527):0.259124):1.311517):8.332963,20:22.926697):47.573303;
+End;

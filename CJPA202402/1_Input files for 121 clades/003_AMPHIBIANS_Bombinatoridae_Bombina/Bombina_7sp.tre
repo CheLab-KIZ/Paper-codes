@@ -1,0 +1,13 @@
+#NEXUS
+Begin trees;
+   Translate
+1 Bombina_lichuanensis,
+2 Bombina_fortinuptialis,
+3 Bombina_microdeladigitora,
+4 Bombina_maxima,
+5 Bombina_variegata,
+6 Bombina_bombina,
+7 Bombina_orientalis
+		;
+tree con_tree = ((((1:2.642608,2:2.642608):4.609704,3:7.252312):8.411812,4:15.664124):7.898687,((5:16.0895020015869,6:16.089502):6.643029,7:22.732531):0.830279);
+End;
