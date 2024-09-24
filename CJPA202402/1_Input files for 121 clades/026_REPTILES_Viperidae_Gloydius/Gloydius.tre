@@ -1,0 +1,31 @@
+#NEXUS
+Begin trees;
+   Translate
+1 Gloydius_chambensis,
+2 Gloydius_himalayanus,
+3 Gloydius_blomhoffii,
+4 Gloydius_tsushimaensis,
+5 Gloydius_ussuriensis,
+6 Gloydius_brevicauda,
+7 Gloydius_caraganus,
+8 Gloydius_cognatus,
+9 Gloydius_halys,
+10 Gloydius_rickmersi,
+11 Gloydius_stejnegeri,
+12 Gloydius_intermedius,
+13 Gloydius_shedaoensis,
+14 Gloydius_changdaoensis,
+15 Gloydius_caucasicus,
+16 Gloydius_liupanensis,
+17 Gloydius_lateralis,
+18 Gloydius_qinlingensis,
+19 Gloydius_huangi,
+20 Gloydius_monticola,
+21 Gloydius_lipipengi,
+22 Gloydius_rubromaculatus,
+23 Gloydius_swild,
+24 Gloydius_angusticeps,
+25 Gloydius_strauchi
+		;
+tree con_tree = ((1:16.458072,2:16.458072):2.364605,(((3:3.897751,(4:2.154682,5:2.154682):1.743069):4.309294,6:8.207046):2.506206,(((((((7:3.027255,((8:2.671305,((9:2.610199,10:2.610199):0.031990,11:2.642189):0.029116):0.032299,(12:0.764626,13:0.764626):1.938978):0.323652):0.119404,14:3.146659):0.390347,15:3.537006):3.658807,16:7.195814):0.461976,17:7.657789):0.505199,18:8.162988):0.415590,(((19:6.200714,20:6.200714):0.642409,((21:3.187519,22:3.187519):1.015601,23:4.203120):2.640003):1.119464,(24:5.904126,25:5.904126):2.058460):0.615993):2.134673):8.109426):4.937322;
+End;

@@ -1,0 +1,33 @@
+#NEXUS
+Begin trees;
+   Translate
+1 Pareas_abros,
+2 Pareas_temporalis,
+3 Pareas_berdmorei,
+4 Pareas_kuznetsovorum,
+5 Pareas_carinatus,
+6 Pareas_nuchalis,
+7 Pareas_andersonii,
+8 Pareas_modestus,
+9 Pareas_macularius,
+10 Pareas_margaritophorus,
+11 Pareas_atayal,
+12 Pareas_iwasakii,
+13 Pareas_komaii,
+14 Pareas_formosensis,
+15 Pareas_geminatus,
+16 Pareas_xuelinensis,
+17 Pareas_yunnanensis,
+18 Pareas_hamptoni,
+19 Pareas_niger,
+20 Pareas_vindumi,
+21 Pareas_kaduri,
+22 Pareas_nigriceps,
+23 Pareas_boulengeri,
+24 Pareas_chinensis,
+25 Pareas_stanleyi,
+26 Pareas_monticola,
+27 Pareas_victorianus
+		;
+tree con_tree = (((1:8.798754,2:8.798754):11.690372,(((3:8.207241,4:8.207241):1.531233,5:9.738474):8.226455,6:17.964929):2.524198):10.760873,((((((7:7.836949,8:7.836949):2.200451,9:10.037399):1.682764,10:11.720163):9.904611,((((11:3.899042,12:3.899042):0.541202,13:4.440244):7.963232,((14:6.013443,(((15:1.229444,16:1.229444):2.504728,17:3.734172):0.986912,(18:3.929337,19:3.929337):0.791746):1.292360):5.659114,20:11.672557):0.730919):0.846687,(21:8.936722,22:8.936722):4.313441):8.374611):0.816492,((23:8.302604,24:8.302604):8.515816,25:16.818420):5.622846):1.828210,(26:15.656536,27:15.656536):8.612940):6.980523):2.370000;
+End;

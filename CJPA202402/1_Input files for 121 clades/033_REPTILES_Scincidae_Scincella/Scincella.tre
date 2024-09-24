@@ -1,0 +1,29 @@
+#NEXUS
+Begin trees;
+   Translate
+1 Scincella_reevesii,
+2 Scincella_ochracea,
+3 Scincella_melanosticta,
+4 Scincella_badenensis,
+5 Scincella_nigrofasciata,
+6 Scincella_baraensis,
+7 Scincella_doriae,
+8 Scincella_rupicola,
+9 Scincella_rufocaudata,
+10 Scincella_caudaequinae,
+11 Scincella_huanrenensis,
+12 Scincella_tsinlingensis,
+13 Scincella_modesta,
+14 Scincella_vandenburghi,
+15 Scincella_boettgeri,
+16 Scincella_formosensis,
+17 Scincella_dunan,
+18 Scincella_monticola,
+19 Scincella_potanini,
+20 Scincella_lateralis,
+21 Scincella_gemmingeri,
+22 Scincella_cherriei,
+23 Scincella_assata
+		;
+tree con_tree = (((((1:3.821037,2:3.821037):11.379375,3:15.200412):4.791759,(4:5.908838,5:5.908838):14.083333):1.028045,(6:13.935947,7:13.935947):7.084269):4.992715,(((8:12.632439,9:12.632439):2.998622,10:15.631061):8.467623,(((11:5.395653,12:5.395653):15.572654,((13:6.676032,14:6.676032):5.963822,((15:5.799367,16:5.799367):0.708292,17:6.507658):6.132196):8.328453):0.715600,((18:5.798121,19:5.798121):14.406313,(20:14.470231,(21:10.534498,(22:5.457017,23:5.457017):5.077481):3.935732):5.734203):1.479473):2.414777):1.914247):12.277069;
+End;

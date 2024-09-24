@@ -1,0 +1,28 @@
+#NEXUS
+Begin trees;
+   Translate
+1 Rhabdophis_chrysargos,
+2 Rhabdophis_akraios,
+3 Rhabdophis_rhodomelas,
+4 Rhabdophis_plumbicolor,
+5 Rhabdophis_confusus,
+6 Rhabdophis_subminiatus,
+7 Rhabdophis_helleri,
+8 Rhabdophis_siamensis,
+9 Rhabdophis_chiwen,
+10 Rhabdophis_nuchalis,
+11 Rhabdophis_pentasupralabialis,
+12 Rhabdophis_leonardi,
+13 Rhabdophis_guangdongensis,
+14 Rhabdophis_swinhonis,
+15 Rhabdophis_nigrocinctus,
+16 Rhabdophis_adleri,
+17 Rhabdophis_callichroma,
+18 Rhabdophis_tigrinus,
+19 Rhabdophis_flaviceps,
+20 Rhabdophis_murudensis,
+21 Rhabdophis_bindi,
+22 Rhabdophis_himalayanus
+		;
+tree con_tree = ((1:11.415555,2:11.415555):11.924274,(3:19.165643,(4:17.462413,(((5:1.785649,6:1.785649):4.422721,(7:1.989824,8:1.989824):4.218545):9.713267,((((((9:5.537774,((10:4.724319,11:4.724319):0.163155,12:4.887474):0.650300):0.831390,13:6.369164):1.625860,14:7.995024):3.606836,(15:9.710108,(16:8.999248,17:8.999248):0.710860):1.891752):0.483407,18:12.085267):2.223472,((19:10.440349,20:10.440349):3.340026,(21:8.631105,22:8.631105):5.149271):0.528364):1.612897):1.540777):1.703230):4.174186):1.220171;
+End;
