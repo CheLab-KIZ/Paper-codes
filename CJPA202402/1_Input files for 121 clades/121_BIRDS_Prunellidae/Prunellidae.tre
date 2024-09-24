@@ -1,0 +1,18 @@
+#NEXUS
+Begin trees;
+   Translate
+1 Prunella_collaris,
+2 Prunella_himalayana,
+3 Prunella_immaculata,
+4 Prunella_rubeculoides,
+5 Prunella_modularis,
+6 Prunella_fulvescens,
+7 Prunella_koslowi,
+8 Prunella_strophiata,
+9 Prunella_montanella,
+10 Prunella_rubida,
+11 Prunella_atrogularis,
+12 Prunella_ocularis
+		;
+tree con_tree = ((1:3.195055,2:3.195055):4.114945,((3:3.424144,4:3.424144):0.156596,(5:1.967857,(((6:0.950620,7:0.950620):0.767944,8:1.718563):0.219760,((9:1.507187,10:1.507187):0.396854,(11:0.741956,12:0.741956):1.162085):0.034282):0.029533):1.612884):3.729259):7.490000;
+End;
