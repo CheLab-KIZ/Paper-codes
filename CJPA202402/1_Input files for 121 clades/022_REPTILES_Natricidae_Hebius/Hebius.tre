@@ -1,0 +1,36 @@
+#NEXUS
+Begin trees;
+   Translate
+1 Hebius_andreae,
+2 Hebius_annamensis,
+3 Hebius_chapaensis,
+4 Hebius_deschauenseei,
+5 Hebius_igneus,
+6 Hebius_leucomystax,
+7 Hebius_atemporalis,
+8 Hebius_optatus,
+9 Hebius_popei,
+10 Hebius_concelarus,
+11 Hebius_pryeri,
+12 Hebius_ishigakiensis,
+13 Hebius_sauteri,
+14 Hebius_maximus,
+15 Hebius_sangzhiensis,
+16 Hebius_vibakari,
+17 Hebius_bitaeniatus,
+18 Hebius_johannis,
+19 Hebius_octolineatus,
+20 Hebius_metusia,
+21 Hebius_yanbianensis,
+22 Hebius_craspedogaster,
+23 Hebius_modestus,
+24 Hebius_septemlineatus,
+25 Hebius_weixiensis,
+26 Hebius_taronensis,
+27 Hebius_venningi,
+28 Hebius_boulengeri,
+29 Hebius_khasiensis,
+30 Hebius_clerki
+		;
+tree con_tree = (1:17.970000,((2:5.713464,((3:2.176422,4:2.176422):2.759064,(5:2.443330,6:2.443330):2.492156):0.777978):8.165848,(((((7:9.432343,(8:8.844078,9:8.844078):0.588265):0.367575,((((10:4.616492,11:4.616492):2.770212,12:7.386704):1.183276,13:8.569980):0.615254,(14:5.560885,(15:4.270895,16:4.270895):1.289990):3.624349):0.614683):0.662628,((((17:3.534005,(18:0.220347,19:0.220347):3.313657):0.344724,20:3.878728):1.060554,21:4.939283):4.597752,22:9.537035):0.925511):0.670224,(((23:0.525670,24:0.525670):3.679789,25:4.205459):4.244360,(26:3.142295,27:3.142295):5.307524):2.682950):0.811196,((28:6.856009,29:6.856009):3.469457,30:10.325466):1.618500):1.935346):4.090688):5.070000;
+End;
