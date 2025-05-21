@@ -1,0 +1,495 @@
+----------------------------- jModeltest 0.1.1 -----------------------------
+(c) 2008 David Posada, Department of Biochemistry, Genetics and Immunology
+University of Vigo, 36310 Vigo, Spain. e-mail: dposada@uvigo.es
+--------------------------------------------------------------------------
+Mon Aug 05 22:24:48 CST 2024  (Windows 7 6.1, arch: x86)
+
+
+******************************* NOTICE ************************************
+This program may contain errors. Please inspect the results carefully.
+***************************************************************************
+
+Reading data file "16S.fas"... OK.
+  number of sequences: 27
+  number of sites: 557
+
+
+---------------------------------------------------------------
+*                                                             *
+*        COMPUTATION OF LIKELIHOOD SCORES WITH PHYML          *
+*                                                             *
+---------------------------------------------------------------
+
+Settings:
+ Phyml version = 2.4.4
+ Candidate models = 24
+  number of substitution schemes = 3
+  including models with equal/unequal base frequencies (+F)
+  including models with/without a proportion of invariable sites (+I)
+  including models with/without rate variation among sites (+G) (nCat = 4)
+ Optimized free parameters (K) = substitution parameters + 51 branch lengths + topology
+ Base tree for likelihood calculations = ML tree
+
+Maximum likelihod estimation for the JC model.
+  ML optimized tree topology
+   Model = JC
+   partition = 000000
+   -lnL = 2734.2092
+   K = 52
+  Computation time = 00h:00:00:09  (00h:00:00:09)
+
+Maximum likelihod estimation for the JC+I model.
+  ML optimized tree topology
+   Model = JC+I
+   partition = 000000
+   -lnL = 2606.1725
+   K = 53
+   p-inv = 0.6350
+  Computation time = 00h:00:01:05  (00h:00:02:04)
+
+Maximum likelihod estimation for the JC+G model.
+  ML optimized tree topology
+   Model = JC+G
+   partition = 000000
+   -lnL = 2578.5055
+   K = 53
+   gamma shape = 0.2100
+  Computation time = 00h:00:02:07  (00h:00:05:01)
+
+Maximum likelihod estimation for the JC+I+G model.
+  ML optimized tree topology
+   Model = JC+I+G
+   partition = 000000
+   -lnL = 2578.5058
+   K = 54
+   p-inv = 0.0000
+   gamma shape = 0.2100
+  Computation time = 00h:00:06:09  (00h:00:12:00)
+
+Maximum likelihod estimation for the F81 model.
+  ML optimized tree topology
+   Model = F81
+   partition = 000000
+   -lnL = 2710.6550
+   K = 55
+   freqA = 0.3100 
+   freqC = 0.2535 
+   freqG = 0.1616 
+   freqT = 0.2749 
+  Computation time = 00h:00:00:08  (00h:00:12:09)
+
+Maximum likelihod estimation for the F81+I model.
+  ML optimized tree topology
+   Model = F81+I
+   partition = 000000
+   -lnL = 2577.9686
+   K = 56
+   freqA = 0.3131 
+   freqC = 0.2543 
+   freqG = 0.1544 
+   freqT = 0.2781 
+   p-inv = 0.6340
+  Computation time = 00h:00:01:06  (00h:00:14:05)
+
+Maximum likelihod estimation for the F81+G model.
+  ML optimized tree topology
+   Model = F81+G
+   partition = 000000
+   -lnL = 2548.5166
+   K = 56
+   freqA = 0.3119 
+   freqC = 0.2548 
+   freqG = 0.1512 
+   freqT = 0.2821 
+   gamma shape = 0.2030
+  Computation time = 00h:00:02:09  (00h:00:17:04)
+
+Maximum likelihod estimation for the F81+I+G model.
+  ML optimized tree topology
+   Model = F81+I+G
+   partition = 000000
+   -lnL = 2548.5160
+   K = 57
+   freqA = 0.3119 
+   freqC = 0.2548 
+   freqG = 0.1512 
+   freqT = 0.2821 
+   p-inv = 0.0000
+   gamma shape = 0.2040
+  Computation time = 00h:00:09:00  (00h:00:26:04)
+
+Maximum likelihod estimation for the K80 model.
+  ML optimized tree topology
+   Model = K80
+   partition = 010010
+   -lnL = 2674.6557
+   K = 53
+   kappa = 3.4973 (ti/tv = 1.7487)
+  Computation time = 00h:00:01:01  (00h:00:27:05)
+
+Maximum likelihod estimation for the K80+I model.
+  ML optimized tree topology
+   Model = K80+I
+   partition = 010010
+   -lnL = 2539.7779
+   K = 54
+   kappa = 3.9738 (ti/tv = 1.9869)
+   p-inv = 0.6380
+  Computation time = 00h:00:01:07  (00h:00:29:02)
+
+Maximum likelihod estimation for the K80+G model.
+  ML optimized tree topology
+   Model = K80+G
+   partition = 010010
+   -lnL = 2509.7505
+   K = 54
+   kappa = 4.1471 (ti/tv = 2.0736)
+   gamma shape = 0.2000
+  Computation time = 00h:00:03:07  (00h:00:33:00)
+
+Maximum likelihod estimation for the K80+I+G model.
+  ML optimized tree topology
+   Model = K80+I+G
+   partition = 010010
+   -lnL = 2509.7505
+   K = 55
+   kappa = 4.1475 (ti/tv = 2.0738)
+   p-inv = 0.0010
+   gamma shape = 0.2010
+  Computation time = 00h:00:12:00  (00h:00:45:00)
+
+Maximum likelihod estimation for the HKY model.
+  ML optimized tree topology
+   Model = HKY
+   partition = 010010
+   -lnL = 2644.5556
+   K = 56
+   freqA = 0.3129 
+   freqC = 0.2546 
+   freqG = 0.1522 
+   freqT = 0.2804 
+   kappa = 3.7543 (ti/tv = 1.7956)
+  Computation time = 00h:00:01:02  (00h:00:46:02)
+
+Maximum likelihod estimation for the HKY+I model.
+  ML optimized tree topology
+   Model = HKY+I
+   partition = 010010
+   -lnL = 2500.4990
+   K = 57
+   freqA = 0.3366 
+   freqC = 0.2456 
+   freqG = 0.1417 
+   freqT = 0.2761 
+   kappa = 4.5530 (ti/tv = 2.1075)
+   p-inv = 0.6380
+  Computation time = 00h:00:02:00  (00h:00:48:02)
+
+Maximum likelihod estimation for the HKY+G model.
+  ML optimized tree topology
+   Model = HKY+G
+   partition = 010010
+   -lnL = 2465.1148
+   K = 57
+   freqA = 0.3545 
+   freqC = 0.2368 
+   freqG = 0.1345 
+   freqT = 0.2742 
+   kappa = 5.1806 (ti/tv = 2.3347)
+   gamma shape = 0.1830
+  Computation time = 00h:00:05:06  (00h:00:53:08)
+
+Maximum likelihod estimation for the HKY+I+G model.
+  ML optimized tree topology
+   Model = HKY+I+G
+   partition = 010010
+   -lnL = 2465.1146
+   K = 58
+   freqA = 0.3545 
+   freqC = 0.2368 
+   freqG = 0.1345 
+   freqT = 0.2742 
+   kappa = 5.1808 (ti/tv = 2.3348)
+   p-inv = 0.0020
+   gamma shape = 0.1830
+  Computation time = 00h:00:12:01  (00h:01:05:09)
+
+Maximum likelihod estimation for the SYM model.
+  ML optimized tree topology
+   Model = SYM
+   partition = 012345
+   -lnL = 2609.8316
+   K = 57
+   R(a) [AC] =  3.6732
+   R(b) [AG] =  6.2004
+   R(c) [AT] =  7.1334
+   R(d) [CG] =  0.7672
+   R(e) [CT] =  18.4703
+   R(f) [GT] =  1.0000
+  Computation time = 00h:00:01:00  (00h:01:06:09)
+
+Maximum likelihod estimation for the SYM+I model.
+  ML optimized tree topology
+   Model = SYM+I
+   partition = 012345
+   -lnL = 2482.0209
+   K = 58
+   R(a) [AC] =  4.2024
+   R(b) [AG] =  8.6463
+   R(c) [AT] =  10.5100
+   R(d) [CG] =  1.0803
+   R(e) [CT] =  29.9330
+   R(f) [GT] =  1.0000
+   p-inv = 0.6130
+  Computation time = 00h:00:01:09  (00h:01:08:09)
+
+Maximum likelihod estimation for the SYM+G model.
+  ML optimized tree topology
+   Model = SYM+G
+   partition = 012345
+   -lnL = 2456.5704
+   K = 58
+   R(a) [AC] =  4.6681
+   R(b) [AG] =  10.1673
+   R(c) [AT] =  12.0824
+   R(d) [CG] =  1.3146
+   R(e) [CT] =  35.7880
+   R(f) [GT] =  1.0000
+   gamma shape = 0.2090
+  Computation time = 00h:00:04:02  (00h:01:13:00)
+
+Maximum likelihod estimation for the SYM+I+G model.
+  ML optimized tree topology
+   Model = SYM+I+G
+   partition = 012345
+   -lnL = 2456.5715
+   K = 59
+   R(a) [AC] =  4.6662
+   R(b) [AG] =  10.1618
+   R(c) [AT] =  12.0765
+   R(d) [CG] =  1.3143
+   R(e) [CT] =  35.7841
+   R(f) [GT] =  1.0000
+   p-inv = 0.0000
+   gamma shape = 0.2090
+  Computation time = 00h:00:07:09  (00h:01:20:09)
+
+Maximum likelihod estimation for the GTR model.
+  ML optimized tree topology
+   Model = GTR
+   partition = 012345
+   -lnL = 2597.0550
+   K = 60
+   freqA = 0.3274 
+   freqC = 0.2333 
+   freqG = 0.2008 
+   freqT = 0.2385 
+   R(a) [AC] =  2.9171
+   R(b) [AG] =  5.4615
+   R(c) [AT] =  5.5128
+   R(d) [CG] =  0.7665
+   R(e) [CT] =  16.8696
+   R(f) [GT] =  1.0000
+  Computation time = 00h:00:01:01  (00h:01:22:00)
+
+Maximum likelihod estimation for the GTR+I model.
+  ML optimized tree topology
+   Model = GTR+I
+   partition = 012345
+   -lnL = 2467.0667
+   K = 61
+   freqA = 0.3383 
+   freqC = 0.2293 
+   freqG = 0.1972 
+   freqT = 0.2352 
+   R(a) [AC] =  2.9375
+   R(b) [AG] =  6.9553
+   R(c) [AT] =  7.2391
+   R(d) [CG] =  1.0585
+   R(e) [CT] =  26.2213
+   R(f) [GT] =  1.0000
+   p-inv = 0.6130
+  Computation time = 00h:00:02:00  (00h:01:24:00)
+
+Maximum likelihod estimation for the GTR+G model.
+  ML optimized tree topology
+   Model = GTR+G
+   partition = 012345
+   -lnL = 2439.9280
+   K = 61
+   freqA = 0.3435 
+   freqC = 0.2274 
+   freqG = 0.1903 
+   freqT = 0.2388 
+   R(a) [AC] =  2.9855
+   R(b) [AG] =  8.1050
+   R(c) [AT] =  7.4557
+   R(d) [CG] =  1.3056
+   R(e) [CT] =  29.4017
+   R(f) [GT] =  1.0000
+   gamma shape = 0.2010
+  Computation time = 00h:00:05:03  (00h:01:29:03)
+
+Maximum likelihod estimation for the GTR+I+G model.
+  ML optimized tree topology
+   Model = GTR+I+G
+   partition = 012345
+   -lnL = 2439.9290
+   K = 62
+   freqA = 0.3435 
+   freqC = 0.2274 
+   freqG = 0.1902 
+   freqT = 0.2388 
+   R(a) [AC] =  2.9858
+   R(b) [AG] =  8.1075
+   R(c) [AT] =  7.4562
+   R(d) [CG] =  1.3056
+   R(e) [CT] =  29.3992
+   R(f) [GT] =  1.0000
+   p-inv = 0.0000
+   gamma shape = 0.2010
+  Computation time = 00h:00:10:03  (00h:01:39:06)
+
+Computation of likelihood scores completed. It took 00h:01:39:06.
+
+
+
+
+---------------------------------------------------------------
+*                                                             *
+*             BAYESIAN INFORMATION CRITERION (BIC)            *
+*                                                             *
+---------------------------------------------------------------
+
+Settings: 
+sample size = 557
+
+ Model selected: 
+   Model = GTR+G
+   partition = 012345
+   -lnL = 2439.9280
+   K = 61
+   freqA = 0.3435 
+   freqC = 0.2274 
+   freqG = 0.1903 
+   freqT = 0.2388 
+   R(a) [AC] =  2.9855
+   R(b) [AG] =  8.1050
+   R(c) [AT] =  7.4557
+   R(d) [CG] =  1.3056
+   R(e) [CT] =  29.4017
+   R(f) [GT] =  1.0000
+   gamma shape = 0.2010
+
+--
+PAUP* Commands Block:
+ If you want to load the selected model and associated estimates in PAUP*,
+ attach the next block of commands after the data in your PAUP file:
+
+[!
+Likelihood settings from best-fit model (GTR+G) selected by BIC
+with jModeltest 0.1.1 on Mon Aug 05 22:26:57 CST 2024]
+
+BEGIN PAUP;
+Lset base=(0.3435 0.2274 0.1903 0.2388) nst=6  rmat=(2.9855 8.1050 7.4557 1.3056 29.4017 1.0000) rates=gamma shape=0.2010 ncat=4 pinvar=0;
+END;
+--
+
+* BIC MODEL SELECTION : Selection uncertainty
+
+Model             -lnL    K         BIC      delta      weight cumWeight
+------------------------------------------------------------------------
+GTR+G        2439.9280   61   5265.5325     0.0000      0.9586    0.9586
+GTR+I+G      2439.9290   62   5271.8571     6.3246      0.0406    0.9992
+SYM+G        2456.5704   58   5279.8496    14.3171      0.0007    1.0000
+SYM+I+G      2456.5715   59   5286.1743    20.6418   3.16e-005    1.0000
+HKY+G        2465.1148   57   5290.6158    25.0834   3.43e-006    1.0000
+HKY+I+G      2465.1146   58   5296.9380    31.4055   1.45e-007    1.0000
+GTR+I        2467.0667   61   5319.8100    54.2775   1.57e-012    1.0000
+SYM+I        2482.0209   58   5330.7506    65.2182   6.60e-015    1.0000
+K80+G        2509.7505   54   5360.9196    95.3871   1.86e-021    1.0000
+HKY+I        2500.4990   57   5361.3843    95.8518   1.47e-021    1.0000
+K80+I+G      2509.7505   55   5367.2420   101.7096   7.87e-023    1.0000
+K80+I        2539.7779   54   5420.9743   155.4418   1.69e-034    1.0000
+F81+G        2548.5166   56   5451.0969   185.5644   4.86e-041    1.0000
+F81+I+G      2548.5160   57   5457.4182   191.8857   2.06e-042    1.0000
+JC+G         2578.5055   53   5492.1070   226.5746   6.05e-050    1.0000
+JC+I+G       2578.5058   54   5498.4302   232.8977   2.56e-051    1.0000
+F81+I        2577.9686   56   5510.0008   244.4683   7.87e-054    1.0000
+JC+I         2606.1725   53   5547.4409   281.9085   5.83e-062    1.0000
+GTR          2597.0550   60   5573.4640   307.9315   1.30e-067    1.0000
+SYM          2609.8316   57   5580.0494   314.5169   4.84e-069    1.0000
+HKY          2644.5556   56   5643.1750   377.6425   9.50e-083    1.0000
+K80          2674.6557   53   5684.4073   418.8748   1.06e-091    1.0000
+F81          2710.6550   55   5769.0511   503.5187   4.41e-110    1.0000
+JC           2734.2092   52   5797.1918   531.6593   3.41e-116    1.0000
+------------------------------------------------------------------------
+-lnL:	negative log likelihod
+K:	number of estimated parameters
+BIC:	Bayesian Information Criterion
+delta:	BIC difference
+weight:	BIC weight
+cumWeight:	cumulative BIC weight
+
+
+Model selection results also available at the "Model > Show model table" menu
+
+
+* BIC MODEL SELECTION : Confidence interval
+
+There are 24 models in the 100% confidence interval: [ GTR+G GTR+I+G SYM+G SYM+I+G HKY+G HKY+I+G GTR+I SYM+I K80+G HKY+I K80+I+G K80+I F81+G F81+I+G JC+G JC+I+G F81+I JC+I GTR SYM HKY K80 F81 JC ] 
+
+
+* BIC MODEL SELECTION : Parameter importance
+
+Parameter   Importance
+----------------------
+fA	    0.9992
+fC	    0.9992
+fG	    0.9992
+fT	    0.9992
+kappa	    0.0000
+titv	    0.0000
+rAC	    1.0000
+rAG	    1.0000
+rAT	    1.0000
+rCG	    1.0000
+rCT	    1.0000
+rGT	    1.0000
+pinv(I)	    0.0000
+alpha(G)	    0.9594
+pinv(IG)	    0.0406
+alpha(IG)	    0.0406
+----------------------
+Values have been rounded.
+ (I):  considers only +I models.
+ (G):  considers only +G models.
+ (IG): considers only +I+G models.
+
+
+* BIC MODEL SELECTION : Model averaged estimates
+
+           Model-averaged
+Parameter       estimates
+-------------------------
+fA	       0.3435
+fC	       0.2274
+fG	       0.1902
+fT	       0.2388
+kappa	       5.1806
+titv	       2.3347
+rAC	       2.9868
+rAG	       8.1067
+rAT	       7.4593
+rCG	       1.3056
+rCT	      29.4065
+rGT	       1.0000
+pinv(I)	       0.6130
+alpha(G)	       0.2010
+pinv(IG)	       0.0000
+alpha(IG)	       0.2010
+-------------------------
+Numbers have been rounded.
+ (I):  considers only +I models.
+ (G):  considers only +G models.
+ (IG): considers only +I+G models.
