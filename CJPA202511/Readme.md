@@ -1,5 +1,5 @@
 # Radiation of the mountain dragon genus *Diploderma*
-Scripts from publication "Reticulate evolution and radiation of the mountain dragon (Agamidae, *Diploderma*) in the Hengduan Mountains hotspot".
+Scripts from publication "**Reticulate evolution and radiation of the mountain dragon (Agamidae, *Diploderma*) in the Hengduan Mountains hotspot**".
 The repository contains two subfolders:
 * **MorphEcoAnalyses_Rcodes:**
 <br> R scripts for conducting morphological PCA analysis, statistical analyses of ecological factors and morphological traits, morphology-ecology correlation analyses, and ancestral state reconstructions.
